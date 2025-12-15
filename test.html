@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Test InfoSocial</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    
+
+<header><h1>¿Controlas tus redes sociales o ellas a ti?</h1></header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="introduccion.html">introduccion</a>
+    <a href="tipos.html">Tipos de Redes</a>
+    <a href="positivo.html">Impacto Positivo</a>
+    <a href="negativo.html">Impacto Negativo</a>
+    <a href="recursos.html">Recursos</a>
+    <a href="#">Test</a>
+</nav>
+
+<section>
+    
+
+<form action="php/guardar_encuesta.php" method="POST">
+
+    <h2>Datos del estudiante</h2>
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Semestre:</label>
+    <input type="number" name="semestre" required>
+
+    <label>Género:</label>
+    <select name="genero">
+        <option>Masculino</option>
+        <option>Femenino</option>
+    </select>
+
+    <label>Grupo:</label>
+    <input type="text" name="grupo" required>
+
+    <label>Turno:</label>
+    <select name="turno">
+        <option>Matutino</option>
+        <option>Vespertino</option>
+    </select>
+
+    <h2>Preguntas</h2>
+
+    <p>1.¿Has perdido horas de sueño por quedarte navegando?</p>
+    <select name="p1">
+        <option value="1">No</option>
+        <option value="2">Si</option>
+    </select>
+
+    <p>2. ¿Te cuesta dejar el teléfono?</p>
+    <select name="p2">
+        <option value="1">No</option>
+        <option value="2">Sí</option>
+    </select>
+
+    <p>3. ¿Comparas tu vida con otros?</p>
+    <select name="p3">
+        <option value="1">Nunca</option>
+        <option value="2">Seguido</option>
+    </select>
+
+    <p>4. ¿Revisas redes antes de dormir?</p>
+    <select name="p4">
+        <option value="1">No</option>
+        <option value="2">Siempre</option>
+    </select>
+
+    <p>5. ¿Te afecta no recibir likes?</p>
+    <select name="p5">
+        <option value="1">No</option>
+        <option value="2">Mucho</option>
+    </select>
+
+    <p>6.¿Te sientes ansioso/a o inquieto/a cuando no puedes acceder a tus redes sociales?</p>
+    <select name="p6">
+        <option value="1">No</option>
+        <option value="2">Sí</option>
+    </select>
+
+    <p>7.¿Sientes presión por mantener una imagen o presencia constante en redes?</p>
+    <select name="p7">
+        <option value="1">No</option>
+        <option value="2">Sí</option>
+    </select>
+
+    <p>8.¿Has dejado de hacer actividades importantes por estar en redes sociales?</p>
+    <select name="p8">
+        <option value="1">No</option>
+        <option value="2">Sí</option>
+    </select>
+
+    <p>9.¿Sientes presión por mantener una imagen o presencia constante en redes?</p>
+    <select name="p9">
+        <option value="1">No</option>
+        <option value="2">Sí</option>
+    </select>
+
+    <p>10.¿Te resulta difícil concentrarte en tareas sin revisar el teléfono?</p>
+    <select name="p10">
+        <option value="1">No</option>
+        <option value="2">Sí</option>
+    </select>
+
+    
+
+    <br><br>
+    <button type="submit">Enviar Test</button>
+
+</form>
+</section>
+
+<footer>
+    <h5> &copy; Elaborado por equipo 9 y chat yi pi ti</h5>
+</footer>
+
+</body>
+</html>

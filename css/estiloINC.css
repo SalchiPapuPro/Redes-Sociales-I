@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.contenedor {
+    width: 350px;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    border-top: 6px solid #4b0015;
+    animation: fadeIn .8s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+h1 {
+    text-align: center;
+    color: #4b0015;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+label {
+    color: #111;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 2px solid #4b0015;
+    outline: none;
+    background: #f8f8f8;
+    font-size: 14px;
+    transition: .3s;
+}
+
+input:focus {
+    border-color: #000000;
+    background: #ffffff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+button {
+    width: 100%;
+    margin-top: 25px;
+    background: #4b0015;
+    padding: 12px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2b000c;
+    transform: scale(1.03);
+}
+h4 {
+    margin-top: 18px;
+    color: #111;
+    font-size: 14px;
+    text-align: center;
+}
+
+h4 a {
+    color: #4b0015;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+h4 a:hover {
+    text-decoration: underline;
+}
+.logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+body {
+    background: #f5f5f5; 
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    background-attachment: fixed;
+    font-size: 18px; 
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #111;
+    left: 10px;
+}
+
+
+
+main {
+    max-width: 1000px;
+    margin: 20px auto; 
+    padding: 40px;
+    font-size: 1.05em;
+    background-color: rgb(236, 186, 109);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+
+
+section {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    font-size: 1.02em;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+
+
+
+.alinear-izquierda main {
+
+    max-width: 900px; 
+
+    margin: 20px 350px 20px 40px; 
+    
+    padding: 40px;
+    background-color: rgb(236, 186, 109);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.alinear-izquierda section {
+    width: 100%;
+    max-width: none;
+    margin: 20px 0;
+}
+
+
+.indice-fijo {
+    position: fixed; 
+    right:20px;  
+    top: 62%; 
+    transform: translateY(-50%); 
+    width: 370px;   
+    padding: 20px 15px; 
+    background-color: #ecd27a;
+    border: 1px solid #8b8989;
+    border-radius: 17px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 100;
+}
+
+.indice-fijo h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px; 
+    color: #4b0015;
+    text-align: center;
+}
+
+.indice-fijo ul {
+    list-style: none; 
+    padding-left: 0;
+}
+
+.indice-fijo li {
+    margin-bottom: 10px;
+}
+
+.indice-fijo a {
+    text-decoration: none;
+    color: #00114b; 
+    display: block; 
+    padding: 5px 0;
+    font-size: 0.95em;
+    font-weight: 600; 
+    text-align: center;
+}
+
+.indice-fijo a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+
+@media (max-width: 1250px) {
+  
+    .indice-fijo {
+        display: none; 
+    }
+
+    .alinear-izquierda main {
+        max-width: 95%; 
+    
+        margin: 20px auto; 
+    }
+    
+    main {
+        max-width: 95%;
+        margin: 20px auto;
+    }
+
+    .historia {
+        column-count: 1; 
+        column-gap: 0;
+    }
+    
+    .alinear-izquierda section {
+        max-width: none;
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 900px) { 
+    
+    .indice-fijo {
+        display: none; 
+    }
+
+    .alinear-izquierda main {
+        max-width: 95%; 
+    
+        margin: 20px auto; 
+    }
+    
+    main {
+        max-width: 95%;
+        margin: 20px auto;
+    }
+
+    .historia {
+        column-count: 1; 
+        column-gap: 0;
+    }
+    
+    .alinear-izquierda section {
+        max-width: none;
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+
+
+
